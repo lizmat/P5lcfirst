@@ -1,5 +1,5 @@
 use v6.c;
-unit module P5lcfirst:ver<0.0.5>;
+unit module P5lcfirst:ver<0.0.6>:auth<cpan:ELIZABETH>;
 
 proto sub lcfirst(|) is export {*}
 multi sub lcfirst(--> Str:D) {
