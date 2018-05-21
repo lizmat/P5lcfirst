@@ -2,8 +2,11 @@ Revision history for P5lcfirst
 
 {{$NEXT}}
 
+0.0.7  2018-05-21T15:28:07+02:00
+    - Added original Perl 5 documentation
+
 0.0.6  2018-05-15T19:40:57+02:00
-    - add authority information
+    - Added authority information
 
 0.0.5  2018-04-25T19:07:35+02:00
     - P5lcfirst must be a module, not a class

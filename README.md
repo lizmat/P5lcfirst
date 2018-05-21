@@ -23,7 +23,30 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of the `lcfirst` and `ucfirst` built-ins of Perl 5 as closely as possible.
+This module tries to mimic the behaviour of the `lcfirst` and `ucfirst` functions of Perl 5 as closely as possible.
+
+ORIGINAL PERL 5 DOCUMENTATION
+=============================
+
+    lcfirst EXPR
+    lcfirst Returns the value of EXPR with the first character lowercased.
+            This is the internal function implementing the "\l" escape in
+            double-quoted strings.
+
+            If EXPR is omitted, uses $_.
+
+            This function behaves the same way under various pragmata, such as
+            in a locale, as "lc" does.
+
+    ucfirst EXPR
+    ucfirst Returns the value of EXPR with the first character in uppercase
+            (titlecase in Unicode). This is the internal function implementing
+            the "\u" escape in double-quoted strings.
+
+            If EXPR is omitted, uses $_.
+
+            This function behaves the same way under various pragma, such as
+            in a locale, as "lc" does.
 
 AUTHOR
 ======
