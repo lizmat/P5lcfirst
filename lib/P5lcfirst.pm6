@@ -1,6 +1,6 @@
 use v6.c;
 
-unit module P5lcfirst:ver<0.0.7>:auth<cpan:ELIZABETH>;
+unit module P5lcfirst:ver<0.0.8>:auth<cpan:ELIZABETH>;
 
 proto sub lcfirst(|) is export {*}
 multi sub lcfirst(--> Str:D) {
@@ -26,7 +26,7 @@ multi sub ucfirst(Str() $string --> Str:D) {
 
 =head1 NAME
 
-P5lcfirst - Implement Perl 5's lcfirst() / ucfirst() built-ins
+P5lcfirst - Implement Perl's lcfirst() / ucfirst() built-ins
 
 =head1 SYNOPSIS
 
@@ -45,7 +45,7 @@ P5lcfirst - Implement Perl 5's lcfirst() / ucfirst() built-ins
 =head1 DESCRIPTION
 
 This module tries to mimic the behaviour of the C<lcfirst> and C<ucfirst>
-functions of Perl 5 as closely as possible.
+functions of Perl as closely as possible.
 
 =head1 ORIGINAL PERL 5 DOCUMENTATION
 
@@ -78,9 +78,9 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
