@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 use P5lcfirst;
 
@@ -9,4 +9,4 @@ ok !defined(P5lcfirst::{'&lcfirst'}), 'is &lcfirst externally NOT accessible?';
 ok defined(::('&ucfirst')),           'is &ucfirst imported?';
 ok !defined(P5lcfirst::{'&ucfirst'}), 'is &ucfirst externally NOT accessible?';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4
