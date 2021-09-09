@@ -2,6 +2,12 @@ Revision history for P5lcfirst
 
 {{$NEXT}}
 
+0.0.10  2021-09-09T12:43:24+02:00
+    - Change file extension to .rakumod
+    - Migrate to zef ecosystem
+    - Update email address
+    - Update copyright year
+
 0.0.9  2020-11-11T20:57:49+01:00
     - Change name of distribution
     - Force to highest possible Raku version
