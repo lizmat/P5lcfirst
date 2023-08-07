@@ -10,7 +10,7 @@
   "description": "Raku port of Perl's lcfirst() / ucfirst() built-ins",
   "license": "Artistic-2.0",
   "name": "P5lcfirst",
-  "perl": "6.c",
+  "perl": "6.d",
   "provides": {
     "P5lcfirst": "lib/P5lcfirst.rakumod"
   },
@@ -23,5 +23,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.10"
+  "version": "0.0.11"
 }

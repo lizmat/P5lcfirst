@@ -1,10 +1,8 @@
-use v6.*;
-
-unit module P5lcfirst:ver<0.0.10>:auth<zef:lizmat>;
+use v6.d;
 
 proto sub lcfirst(|) is export {*}
 multi sub lcfirst(--> Str:D) {
-    lcfirst(CALLERS::<$_>)
+    lcfirst(CALLER::LEXICAL::<$_>)
 }
 multi sub lcfirst(Str() $string --> Str:D) {
     $string
@@ -14,7 +12,7 @@ multi sub lcfirst(Str() $string --> Str:D) {
 
 proto sub ucfirst(|) is export {*}
 multi sub ucfirst(--> Str:D) {
-    ucfirst(CALLERS::<$_>)
+    ucfirst(CALLER::LEXICAL::<$_>)
 }
 multi sub ucfirst(Str() $string --> Str:D) {
     $string
@@ -90,12 +88,16 @@ to use that scope's C<$_> as the invocant:
 
 Elizabeth Mattijsen <liz@raku.rocks>
 
+If you like this module, or what I’m doing more generally, committing to a
+L<small sponsorship|https://github.com/sponsors/lizmat/>  would mean a great
+deal to me!
+
 Source can be located at: https://github.com/lizmat/P5lcfirst . Comments and
 Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021, 2023 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
